@@ -72,7 +72,7 @@ def upload(args,syn):
 		workflow = syn.store(workflow)
 		pipeline = workflow.id
 	fileEnt = File(args.input,parent=parentId)
-	fileEnt.annotations = temp.to_dict('index').values()[0]
+	#fileEnt.annotations = temp.to_dict('index').values()[0]
 	fileEnt.dataType = dataType
 	fileEnt.sampleId = sampleId
 	fileEnt = syn.store(fileEnt,used = pipeline)
